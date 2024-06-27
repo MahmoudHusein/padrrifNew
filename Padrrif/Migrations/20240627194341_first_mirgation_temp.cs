@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Padrrif.Migrations
 {
     /// <inheritdoc />
-    public partial class initnal : Migration
+    public partial class first_mirgation_temp : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -164,8 +164,8 @@ namespace Padrrif.Migrations
                     EmployeeId = table.Column<Guid>(type: "char(36)", nullable: true, collation: "ascii_general_ci"),
                     VillageId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
                     OwnershipTypeId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
-                    DocumentId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    DocumentId = table.Column<int>(type: "int", nullable: false),
+                     //   .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     CreatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     FamilyMembers = table.Column<int>(type: "int", nullable: false),
                     ChildrenUnderEighteen = table.Column<int>(type: "int", nullable: false),

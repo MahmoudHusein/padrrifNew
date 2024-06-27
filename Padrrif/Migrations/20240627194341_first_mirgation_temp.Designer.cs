@@ -12,8 +12,8 @@ using Padrrif;
 namespace Padrrif.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240627181648_initnal")]
-    partial class initnal
+    [Migration("20240627194341_first_mirgation_temp")]
+    partial class first_mirgation_temp
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
